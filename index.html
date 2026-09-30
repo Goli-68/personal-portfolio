@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeinab Yousefi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main-heading">
+        <h1>About Me</h1>
+      </div>
+      <div class="intro-paragraph">
+        <p class="paragraph">
+          Hello, my name is Zeinab. I have been living in Denmark for four and a
+          half years. I worked as a dental assistant in Iran for seven years. I
+          love traveling and sports; I enjoy visiting new places and meeting new
+          people.
+        </p>
+      </div>
+
+      <div class="skills">
+        <div>
+          <p>My selected skills:</p>
+        </div>
+
+        <ul>
+          <li>Management&Organization</li>
+          <li>Teamwork&Adaptability</li>
+          <li>Communication&Patient care</li>
+        </ul>
+      </div>
+
+      <div class="skills">
+        <div>
+          <p>My hobbies:</p>
+        </div>
+
+        <ul>
+          <li>Swimming</li>
+          <li>Reading books</li>
+          <li>Watching films</li>
+        </ul>
+      </div>
+
+      <div class="button-container">
+        <button id="color-button">Try your luck!</button>
+      </div>
+      <script>
+        const colorButton = document.querySelector("#color-button");
+
+        colorButton.addEventListener("click", () => {
+          const randomColor = `#${Math.floor(Math.random() * 0xffffff)
+            .toString(16)
+            .padStart(6, "0")}`;
+
+          document.body.style.backgroundColor = randomColor;
+        });
+      </script>
+    </div>
+  </body>
+</html>
